@@ -20,9 +20,6 @@ links:
   - name:         标签
     url:          /tags
     external:     false
-  - name:         教程
-    url:          /demo
-    external:     false
   - name:         关于
     url:          /about
     external:     false
