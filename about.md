@@ -93,6 +93,6 @@ ID|项 目 名 称| 开 发 语 言| 功 能 简 述| 框架| 是否上线|
 你可以通过以下几种方式联系到我。
 
 
-* [邮件](1972343026@qq.com)<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kKGpp6KjpKOgoqbQ4eG_8--9" style="text-decoration:none;">给我写信</a>
+* <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=kKGpp6KjpKOgoqbQ4eG_8--9" style="text-decoration:none;">给我写信</a>
 
 * [bilibili](https://space.bilibili.com/277718516).
