@@ -5,7 +5,7 @@ url:              https://cesforchina.github.io # 域名
 signoff:          "cesforchina" # Your name
 facebook_appid:   #cesforchina
 google_analytics: UA-101222464-1
-share:            true 
+share:            false 
 # 分页
 paginate: 15
 paginate_path: "cesforchinapage:num"
