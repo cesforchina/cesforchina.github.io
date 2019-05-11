@@ -3,12 +3,12 @@ title:            "cesforchina|独立开发者|GitHub blog"
 description:      "cesforchina独立开发者|欢迎来到 cesforchina「角落」侃侃理想、谈谈人生、敲敲代码。"
 url:              https://cesforchina.github.io # 域名
 signoff:          "cesforchina" # Your name
-facebook_appid:   #liberxue
+facebook_appid:   #cesforchina
 google_analytics: UA-101222464-1
 share:            true 
 # 分页
 paginate: 15
-paginate_path: "liberxuepage:num"
+paginate_path: "cesforchinapage:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
