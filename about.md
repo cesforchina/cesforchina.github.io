@@ -93,8 +93,7 @@ ID|项 目 名 称| 开 发 语 言| 功 能 简 述| 框架| 是否上线|
  
 你可以通过以下几种方式联系到我。
 
-* [提交Issues](https://github.com/Liberxue/liberxue.github.io/issues)
  
-* [发邮件](mailto:liberxue@gmail.com)
+* [发邮件](1972343026@qq.com)
  
-* [Twitter](https://twitter.com/liberxue).
+* [bilibili](https://space.bilibili.com/277718516).
