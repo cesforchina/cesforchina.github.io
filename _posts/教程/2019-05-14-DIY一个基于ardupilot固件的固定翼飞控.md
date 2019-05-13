@@ -1,9 +1,9 @@
 ---
 layout: blog
-istop: true
+istop: force
 title: "DIY一个基于ardupilot固件的固定翼飞控"
 background-image: https://cesforchina.files.wordpress.com/2019/05/snipaste_2019-02-13_20-34-23.jpg
-date: 2019-05-11 15:59:56
+date: 2019-05-14 00:48:56
 category: 教程
 tags:
 - 飞控
