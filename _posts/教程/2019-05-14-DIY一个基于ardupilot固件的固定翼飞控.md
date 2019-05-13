@@ -1,6 +1,6 @@
 ---
-layout: blog
-istop: force
+layout: default
+istop: false
 title: "DIY一个基于ardupilot固件的固定翼飞控"
 background-image: https://cesforchina.files.wordpress.com/2019/05/snipaste_2019-02-13_20-34-23.jpg
 date: 2019-05-14 00:48:56
