@@ -19,29 +19,42 @@ tags:
 
 # 硬件规格
 ## 处理器
-### 带FPU STM32 F407的单32位ARM Cortex M4内核
+带FPU STM32 F407的单32位ARM Cortex M4内核
 ## 传感器
-### InvenSense MPU6000 IMU（加速器，陀螺仪)
-### MS5611气压计
-### IST8310指南针
+InvenSense MPU6000 IMU（加速器，陀螺仪)
+
+MS5611气压计
+
+IST8310指南针
 ## 功率
-### 2个独立的3,3v LDO，用于CPU、传感器、CAN，SD卡和Fram
-### 反向电压和过压电源保护
-### 电路板电压和伺服电压传感器
+2个独立的3,3v LDO，用于CPU、传感器、CAN，SD卡和Fram
+
+反向电压和过压电源保护
+
+电路板电压和伺服电压传感器
 ## 接口
-### 5个UART串行端口，1个带逆变器，用于frsky telemertry
-### 高达12x PWM输出
-### Spektrum DSM / DSM2 / DSM-X卫星输入
-### Futaba S.BUS输入支持（带外置逆变器）
-### PPM和信号
-### RSSI（PWM或电压）输入
-### I2C，SPI，CAN，USB
-### 3.3V和6.6V ADC输入
+5个UART串行端口，1个带逆变器，用于frsky telemertry
+
+高达12x PWM输出
+
+Spektrum DSM / DSM2 / DSM-X卫星输入
+
+Futaba S.BUS输入支持（带外置逆变器）
+
+PPM和信号
+
+RSSI（PWM或电压）输入
+
+I2C，SPI，CAN，USB
+
+3.3V和6.6V ADC输入
 ## 外形尺寸
-### 50*30.5mm
+50*30.5mm
 ## 其他
-### micro SD卡（用于日志）
-### Fram储存参数
+
+micro SD卡（用于日志）
+
+Fram储存参数
 
 # 软件
 
