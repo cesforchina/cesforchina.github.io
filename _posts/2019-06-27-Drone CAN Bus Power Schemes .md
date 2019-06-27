@@ -4,7 +4,7 @@ tags:
 - CAN
 - 电源
 keywords: pages, authoring, exclusion, frontmatter
-permalink: mydoc_pages.html
+permalink: 无人机CAN总线电源方案.html
 summary: "This is some summary frontmatter for my sample post."
 ---
 工作正在进行中！
