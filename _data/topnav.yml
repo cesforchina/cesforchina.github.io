@@ -15,4 +15,4 @@ topnav_dropdowns:
     - title: 教程
       folderitems:
         - title: Jekyll Documentation Theme
-          url: /mydoc_introduction.html
+          url: /index.html
