@@ -25,7 +25,7 @@ summary: "This is some summary frontmatter for my sample post."
 电源方案由LTC4417电源开关组成，可选择各种输入（电源砖，伺服，USB插头），并将其分配给各种用户（5V-HIPOWER，5V-PERIPH）。CAN总线由5V-PERIPH电源供电。但是，这个轨道通过[BQ24315](https://www.ti.com/lit/ds/symlink/bq24315.pdf)保护IC，其电流限制设置为1A。这个5V-PERIPH轨道也为基本上所有其他端口的外设供电，但Serial1端口除外，这些端口由5V-HIPOWER供电。
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixhawk1-03b.png)
 
-来源：[github.com/PX4/Hardware](github.com/PX4/Hardware)
+来源：[github.com/PX4/Hardware](https://github.com/PX4/Hardware)
 
 ## Pixhawk 2,Cube
 
@@ -34,10 +34,10 @@ summary: "This is some summary frontmatter for my sample post."
 在我所知的所有基于立方体的飞行控制系统中都可以找到相同的PSM模块或方案，这意味着下面将进一步总结的所有内容也适用于它们。  
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixhawk2-cube-03.png)
 
-来源：[github.com/PX4/Hardware/tree/master/PSMv3_REV_C](github.com/PX4/Hardware/tree/master/PSMv3_REV_C)  
-[github.com/PX4/Hardware/tree/master/FMUv3_REV_D](github.com/PX4/Hardware/tree/master/FMUv3_REV_D)  
-[github.com/3drobotics/Pixhawk_OS_Hardware](github.com/3drobotics/Pixhawk_OS_Hardware)  
-[github.com/proficnc/The-Cube](github.com/proficnc/The-Cube)
+来源：[github.com/PX4/Hardware/tree/master/PSMv3_REV_C](https://github.com/pixhawk/Hardware/tree/master/PSMv3_REV_C)  
+[github.com/PX4/Hardware/tree/master/FMUv3_REV_D](https://github.com/PX4/Hardware/tree/master/FMUv3_REV_D)  
+[github.com/3drobotics/Pixhawk_OS_Hardware](https://github.com/3drobotics/Pixhawk_OS_Hardware)  
+[github.com/proficnc/The-Cube](https://github.com/proficnc/The-Cube)
 
 ## Pixracer
 
@@ -50,7 +50,7 @@ Pixracer拥有最原始的电源方案。它由一个二极管OR-ing作为电源
 我想最后用我的Pixracer添加它，这肯定是来自亚洲的一个来源，从CAN总线中抽取1 A是不可思议的。我不知道原因，也许它有一个较弱的保险丝左右。因此，请注意，您的Pixracer可能无法达到这个1 A的限制。
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixracer-03.png)
 
-来源：[github.com/ArduPilot/Schematics/tree/master/mRobotics](github.com/ArduPilot/Schematics/tree/master/mRobotics)
+来源：[github.com/ArduPilot/Schematics/tree/master/mRobotics](https://github.com/ArduPilot/Schematics/tree/master/mRobotics)
 
 ## AUAV X2.1
 
