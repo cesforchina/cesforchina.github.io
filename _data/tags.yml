@@ -13,11 +13,11 @@ allowed-tags:
   - news
   - troubleshooting
   - mobile
-  -CAN
-  -电源
-  -穿越机
-  -FPV
-  -机架
-  -固定翼
-  -飞控
-  -ArduPilot
+  - CAN
+  - 电源
+  - 穿越机
+  - FPV
+  - 机架
+  - 固定翼
+  - 飞控
+  - ArduPilot
