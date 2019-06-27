@@ -21,16 +21,16 @@ tags:
 基本问题是这些飞行控制器上的CAN-5V可以从主要的5 V电源（电源砖）获得，但另外是电流限制。此外，该电流限制包括所有其他外设，也就是那些不在CAN总线上的外设（除了可能在Serial1上的外设）。
 
 那么，让我们看一下第1章中的一些飞行控制器，在第2章中得出一些结论，并在第3章讨论电源方案。
-1. Pixhawk型飞行控制器电源方案
+# 1. Pixhawk型飞行控制器电源方案
 
-Pixhawk 1
+## Pixhawk 1
 
 电源方案由LTC4417电源开关组成，可选择各种输入（电源砖，伺服，USB插头），并将其分配给各种用户（5V-HIPOWER，5V-PERIPH）。CAN总线由5V-PERIPH电源供电。但是，这个轨道通过[BQ24315](https://www.ti.com/lit/ds/symlink/bq24315.pdf)保护IC，其电流限制设置为1A。这个5V-PERIPH轨道也为基本上所有其他端口的外设供电，但Serial1端口除外，这些端口由5V-HIPOWER供电。
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixhawk1-03b.png)
 
 来源：[github.com/PX4/Hardware](github.com/PX4/Hardware)
 
-Pixhawk 2，立方体
+## Pixhawk 2,Cube
 
 除了电子设备分布在不同的PCB之外，电源方案基本上与Pixhawk 1的电源方案相同。关键部件，即[LTC4417](https://www.analog.com/media/en/technical-documentation/data-sheets/4417f.pdf)电源开关和[BQ24315](https://www.ti.com/lit/ds/symlink/bq24315.pdf)保护IC，位于PSM上。对于Pixhawk 1，CAN总线由5V-PERIPH电源供电，其电流限制为1 A，除了Serial1上的电路外，它还基本上为所有其他外设供电。
 
@@ -41,7 +41,7 @@ Pixhawk 2，立方体
 [github.com/3drobotics/Pixhawk_OS_Hardware](github.com/3drobotics/Pixhawk_OS_Hardware)  
 [github.com/proficnc/The-Cube](github.com/proficnc/The-Cube)
 
-Pixracer
+## Pixracer
 
 Pixracer拥有最原始的电源方案。它由一个二极管OR-ing作为电源开关和可重置保险丝组成。CAN总线连接到5V-PERIPH导轨，该导轨由1 A保险丝保护，非常类似于Pixhawk 1和Cube。5V-PERIPH导轨为所有其他外设供电，包括Serial1上的外设。
 
@@ -54,14 +54,14 @@ Pixracer拥有最原始的电源方案。它由一个二极管OR-ing作为电源
 
 来源：[github.com/ArduPilot/Schematics/tree/master/mRobotics](github.com/ArduPilot/Schematics/tree/master/mRobotics)
 
-AUAV X2.1
+## AUAV X2.1
 
 AUAV X2.1的电源方案更好（遗憾的是它没有过压保护）。输入电源开关通过使用[LTC4415](https://www.analog.com/media/en/technical-documentation/data-sheets/4415fa.pdf)理想二极管的二极管OR-ing实现，并且功率分配由TPS2062电源开关实现，其内部电流限制通常为1.5 A（根据数据表，实际限制可能会有所不同） ）。不幸的是，Serial1也是由这个轨道供电。因此，1.5 A限制还包括遥测的显着电流消耗
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-auavx21-03.png)
 
 来源：github.com/ArduPilot/Schematics/tree/master/mRobotics
 
-摘要
+## 摘要
 
 上面讨论的飞行控制器的动力方案可以粗略地总结如下图（应该理解不同的飞行控制器在细节上有所不同）：
 ![Screenshot](http://www.olliw.eu/uploads/uc4h-powerschemes-sketch-pixhawk-01.jpg)
@@ -73,12 +73,12 @@ AUAV X2.1的电源方案更好（遗憾的是它没有过压保护）。输入�
 我想完成本章，提到任何CAN电源方案都涉及某种电流限制，如果它是用于提供主电源的电源。此外，任何配电方案都具有固有的电流限制。例如，二极管OR-ing方案中的肖特基二极管具有额定电流，理想二极管方案中的FET具有额定电流，等等。这应该是清楚的，显然不是这里的主题。这里的主题是上述电源方案中的“人为”电流限制。
 
 
-2. CAN节点分类
+# 2. CAN节点分类
 
 CAN节点可大致分类如下：
 
-低功耗与高功率
-飞行危急与非飞行危急
+1低功耗与高功率
+1飞行危急与非飞行危急
 USB可用与非USB可用
 前两点应该是自我解释，第三点可能不那么重要。让我以相反的顺序浏览它们：
 
@@ -97,7 +97,7 @@ USB可用与非USB可用：对于维护或在地面上，仅通过插入USB电�
 因此，本文的目的是提高对这一点的认识，即飞行控制器的CAN总线电源可以受到限制，并提出一些典型和简单的电源方案。它也可以被视为提醒飞行控制器设计师提出更好的设计（而不仅仅是廉价的调整）。
 
 
-3.电源方案
+# 3.电源方案
 
 如前所述，我们讨论了电流消耗，以及如何最好地使每个CAN节点满意。
 
