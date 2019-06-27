@@ -32,7 +32,7 @@ summary: "This is some summary frontmatter for my sample post."
 
 除了电子设备分布在不同的PCB之外，电源方案基本上与Pixhawk 1的电源方案相同。关键部件，即[LTC4417](https://www.analog.com/media/en/technical-documentation/data-sheets/4417f.pdf)电源开关和[BQ24315](https://www.ti.com/lit/ds/symlink/bq24315.pdf)保护IC，位于PSM上。对于Pixhawk 1，CAN总线由5V-PERIPH电源供电，其电流限制为1 A，除了Serial1上的电路外，它还基本上为所有其他外设供电。
 
-在我所知的所有基于立方体的飞行控制系统中都可以找到相同的PSM模块或方案，这意味着下面将进一步总结的所有内容也适用于它们。
+在我所知的所有基于立方体的飞行控制系统中都可以找到相同的PSM模块或方案，这意味着下面将进一步总结的所有内容也适用于它们.  
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixhawk2-cube-03.png)
 
 [github.com/PX4/Hardware/tree/master/PSMv3_REV_C](github.com/PX4/Hardware/tree/master/PSMv3_REV_C)  
