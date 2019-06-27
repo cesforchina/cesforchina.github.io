@@ -6,7 +6,7 @@ topnav:
     - title: GitHub
       external_url: https://github.com/cesforchina
     - title: 博客
-      url: /news
+      url: /博客
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -16,7 +16,3 @@ topnav_dropdowns:
       folderitems:
         - title: Jekyll Documentation Theme
           url: /mydoc_introduction.html
-        - title: 教程
-          url: /p1_landing_page.html
-        - title: Product 2
-          url: /p2_landing_page.html
