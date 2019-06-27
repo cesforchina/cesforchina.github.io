@@ -1,15 +1,13 @@
 ---
-layout: blog
-istop: true
 title: "无人机CAN总线电源方案"
-background-image: http://www.olliw.eu/uploads/uc4h-powerschemes-sketch-uc4h-cubecarrier-01.jpg
-date: 2019-06-27 12：24：50
-category: 教程
 tags:
 - CAN
 - 电源
+keywords: pages, authoring, exclusion, frontmatter
+sidebar: mydoc_sidebar
+permalink: mydoc_pages.html
+summary: "This is some summary frontmatter for my sample post."
 ---
-
 工作正在进行中！
 
 在本文中，我将使用CAN总线作为通信骨干来评估无人机的电源。
