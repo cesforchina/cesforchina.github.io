@@ -4,7 +4,6 @@ tags:
 - CAN
 - 电源
 keywords: pages, authoring, exclusion, frontmatter
-sidebar: mydoc_sidebar
 permalink: mydoc_pages.html
 summary: "This is some summary frontmatter for my sample post."
 ---
