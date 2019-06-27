@@ -7,41 +7,34 @@ permalink: 如何给ArduPilot添加一个新的飞控.html
 summary: "This is some summary frontmatter for my sample post."
 ---
 
-========================================
-Porting to a new flight controller board
-========================================
+ArduPilot 支持各种各样的飞行控制器，新的控制器一直在增加。本页阐述了将ArduPilot移植到新电路板的步骤，重点是使用ChibiOS移植到基于STM32的电路板（最常见的类型）。 [ChibiOS ](http://www.chibios.org/dokuwiki/doku.php)
 
-ArduPilot :ref:`supports a wide variety of flight controllers <common-autopilots>` with new controllers being added all the time.  This page spells out the steps to port ArduPilot to a new board with an emphasis on porting to STM32 based boards (the most common type) using `ChibiOS <http://www.chibios.org/dokuwiki/doku.php>`__.
+考虑加入[ArduPilot/ChibiOS gitter channel](https://gitter.im/ArduPilot/ChibiOS)与其他开发人员讨论该主题。
 
-Consider joining the `ArduPilot/ChibiOS gitter channel <https://gitter.im/ArduPilot/ChibiOS>`__ to speak with other developers about this topic.
-
-..  youtube:: y2KCB0a3xMg
-    :width: 100%
-
-Step 1 - getting started
+## 1-开始
 ------------------------
 
-- determine which microcontroller the new flight controllers uses.  if it is a CPU we already support (STM32F42x, STM32F40x STM32F41x, STM32F745, STM32F765 or STM32F777 where “x” can be any number), then the port should be relatively straight forward.  If it is another CPU, ping us on the `ArduPilot/ChibiOS gitter channel <https://gitter.im/ArduPilot/ChibiOS>`__ for advice on how to proceed.
-- determine the crystal frequency (normally 8Mhz or 24Mhz).  refer to the schematic or read the writing on the crystal which is normally a small silver square.
+- 确定新飞行控制器使用哪个微控制器。如果它是我们已经支持的CPU（STM32F42x，STM32F40x STM32F41x，STM32F745，STM32F765或STM32F777，其中“x”可以是任何数字），那么端口应该相对简单。如果它是另一个CPU，请在[ArduPilot/ChibiOS gitter channel](https://gitter.im/ArduPilot/ChibiOS)ping我们，以获取有关如何继续操作的建议。
+- 确定晶体频率（通常为8Mhz或24Mhz）。参考原理图或读取晶体上的写字，通常是一个小银色方块。
 
-Step 2 - create a hwdef.dat file for the board
+## 2-为电路板创建一个hwdef.dat文件
 ----------------------------------------------
 
-- make a subdir in `libraries/AP_HAL_ChibiOS/hwdef <https://github.com/ArduPilot/ardupilot/tree/master/libraries/AP_HAL_ChibiOS/hwdef>`__ for your board (i.e. “new-board”).  This directory name will eventually be used during the build process (i.e. “waf configure --board new-board”) so keep the name relatively short.
-- copy/rename an existing template hwdef.dat that is similar to the CPU for your board into the directory created above.  For example, if the board has a STMF40x chip copy the `f405-min/hwdef.dat <https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_HAL_ChibiOS/hwdef/f405-min>`__ file into the new directory.
+- 在[libraries/AP_HAL_ChibiOS/hwdef](https://github.com/ArduPilot/ardupilot/tree/master/libraries/AP_HAL_ChibiOS/hwdef)为您的电路板创建一个子目录（即“new-board”）。此目录名最终将在构建过程中使用（即“waf configure -board new-board”），因此请保持名称相对较短。
+- 将与您的电路板CPU类似的现有模板hwdef.dat复制/重命名为上面创建的目录。例如，如果电路板具有STMF40x芯片，将[f405-min/hwdef.dat](https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_HAL_ChibiOS/hwdef/f405-min)文件复制到新目录中。
 
-Step 3 - configure and build a minimal firmware for the board
+## 3-为电路板配置和构建最小固件
 -------------------------------------------------------------
 
-Follow the :ref:`Building the code <building-the-code>` instructions or take a shortcut and read the `BUILD.md <https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md>`__ file which includes doing the following:
+按照[Building the code](http://ardupilot.org/dev/docs/building-the-code.html)说明或阅读[BUILD.md](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md)文件，其中包括执行以下操作：
 
-- ``cd ardupilot`` (or wherever you have :ref:`cloned <git-clone>` ArduPilot to)
+- ``cd ardupilot``（或者你[git-clone](http://ardupilot.org/dev/docs/git-clone.html#git-clone)ArduPilot的地方）
 - ``./waf configure --board new-board``
 - ``./waf copter``
 
-If successful the build should produce an .apj file in build/new-board/bin/arducopter.apj
+如果成功，构建应该在build / new-board / bin / arducopter.apj中生成.apj文件
 
-Step 4 - upload an ArduPilot compatible bootloader to the board
+## 4-将ArduPilot兼容的引导加载程序上传到电路板
 ---------------------------------------------------------------
 
 Some boards come with a bootloader pre-installed while others rely on the board manufacturer to use `dfu <http://dfu-util.sourceforge.net/>`__ to install the firmware to the board.  In either case, in order to conveniently load ArduPilot to the board over USB, an ArduPilot compatible bootloader must be uploaded to the board using `dfu <http://dfu-util.sourceforge.net/>`__. "dfu" can be downloaded from `here <http://dfu-util.sourceforge.net/>`__.
