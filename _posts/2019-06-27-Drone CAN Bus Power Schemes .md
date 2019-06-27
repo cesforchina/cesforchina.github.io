@@ -35,7 +35,7 @@ summary: "This is some summary frontmatter for my sample post."
 在我所知的所有基于立方体的飞行控制系统中都可以找到相同的PSM模块或方案，这意味着下面将进一步总结的所有内容也适用于它们。  
 ![Screenshot](http://www.olliw.eu/uploads/canbuspowerschemes-pixhawk2-cube-03.png)
 
-[github.com/PX4/Hardware/tree/master/PSMv3_REV_C](github.com/PX4/Hardware/tree/master/PSMv3_REV_C)  
+来源：[github.com/PX4/Hardware/tree/master/PSMv3_REV_C](github.com/PX4/Hardware/tree/master/PSMv3_REV_C)  
 [github.com/PX4/Hardware/tree/master/FMUv3_REV_D](github.com/PX4/Hardware/tree/master/FMUv3_REV_D)  
 [github.com/3drobotics/Pixhawk_OS_Hardware](github.com/3drobotics/Pixhawk_OS_Hardware)  
 [github.com/proficnc/The-Cube](github.com/proficnc/The-Cube)
