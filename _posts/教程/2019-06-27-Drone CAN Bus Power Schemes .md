@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: normal
 istop: true
 title: "无人机CAN总线电源方案"
 background-image: http://www.olliw.eu/uploads/uc4h-powerschemes-sketch-uc4h-cubecarrier-01.jpg
