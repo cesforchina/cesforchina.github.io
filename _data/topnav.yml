@@ -6,7 +6,7 @@ topnav:
     - title: GitHub
       external_url: https://github.com/cesforchina
     - title: 博客
-      url: /news
+      url: /Blog
 
 #Topnav dropdowns
 topnav_dropdowns:
