@@ -5,11 +5,11 @@ entries:
   levels: one
   folders:
 
-  - title: Blog
+  - title: 技术探讨
     output: web
     folderitems:
-    - title: 技术探讨
-      url: /news.html
+    - title: Blog
+      url: /Blog.html
       output: web
     - title: Theme instructions
       url: /mydoc_introduction.html
