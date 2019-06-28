@@ -11,6 +11,6 @@ entries:
     - title: Blog
       url: /Blog.html
       output: web
-    - title: Theme instructions
+    - title: Jekyll Doc
       url: /mydoc_introduction.html
       output: web
