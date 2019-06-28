@@ -9,7 +9,7 @@ entries:
     output: web
     folderitems:
     - title: Blog
-      url: /news.html
+      url: /Blog.html
       output: web
     - title: Jekyll Doc
       url: /mydoc_introduction.html
