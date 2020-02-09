@@ -37,4 +37,4 @@ LocalState\rootfs\home\你的WSL用户名\inav\obj`
 LocalState\rootfs\home\你的WSL用户名\inav\obj`  
 文件夹中的内容，即上次编译相关的文件。
 
-![WSL编译F4BY](https://cesforchina.files.wordpress.com/2019/06/wsle7bc96e8af91f4by.png)
+{% include image.html file="WSL编译F4BY.png" %}
