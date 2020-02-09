@@ -29,12 +29,10 @@ summary: "This is some summary frontmatter for my sample post."
 `make TARGET={TARGET_NAME}`
 
 当然，将`{TARGET_NAME}`替换为您要编译的目标，编译后的固件在WSL文件区中  
-`C:\用户\你的WIN10用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_***\
-LocalState\rootfs\home\你的WSL用户名\inav\obj`  
+`C:\用户\你的WIN10用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_***\LocalState\rootfs\home\你的WSL用户名\inav\obj`  
 
 同理也可以对你的储存库进行以上操作，可以避开因为不熟悉github操作却使用官方储存库导致的各种问题。有关项目的修改建议在WSL外部进行，通过`GitHub Desktop`克隆到本地后，进行修改，上传合并等，然后在WSL中`cd inav***`进入你的项目文件夹，进行`git pull`操作，即从储存库中拉取更新到WSL项目文件夹中。在编译过某目标板之后，下次编译时应清除  
-`C:\用户\你的WIN10用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_***\
-LocalState\rootfs\home\你的WSL用户名\inav\obj`  
+`C:\用户\你的WIN10用户名\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_***\LocalState\rootfs\home\你的WSL用户名\inav\obj`  
 文件夹中的内容，即上次编译相关的文件。
 
 {% include image.html file="WSL编译F4BY.png" %}
