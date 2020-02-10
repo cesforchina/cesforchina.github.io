@@ -1,6 +1,9 @@
 body {
     font-size:15px;
 }
+body {
+  padding-top: 50px;
+}
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
