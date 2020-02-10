@@ -1,7 +1,9 @@
 body {
     font-size:15px;
 }
-
+body {
+  padding-top: 200px;
+}
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -201,7 +203,7 @@ p.post-meta {font-size: 80%; color: #777;}
     font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 200px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
     z-index: -1;
     width:223px;
