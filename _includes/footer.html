@@ -6,14 +6,11 @@
                   <img src="{{ "images/company_logo.png"}}" alt="Company logo"/>
                   </p>
                 </div>
-                <div style="display:table; width:85%; height: 98px; float:right;">
-                  <p style="display:table-cell;vertical-align:middle;">
-                    &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.
-                  </p>
-                  <p style="display:table-cell;vertical-align:middle;">
-                    {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}
-                    {% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
-                  </p>
+                <div style="width:85%; height: 98px; float:right;padding:32px 0px">
+                  &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.
+                  <br />
+                  {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}
+                  {% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
                 </div>
               </div>
            </div>
