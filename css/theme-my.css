@@ -40,14 +40,14 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
 }
 
 a[data-toggle="tooltip"] {
-    color: #263859;
+    color: #649345;
     font-style: italic;
     cursor: default;
 }
 
 .navbar-inverse {
     background-color: #17223b;
-    border-color: #5b893c;
+    border-color: #263859;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
