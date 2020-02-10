@@ -14,15 +14,15 @@ h4 {color: #808080; }
 }
 
 .nav > li.active > a {
-    background-color: #63707e;
+    background-color: #17223b;
 }
 
 .nav > li > a:hover {
-    background-color: #63707e;
+    background-color: #17223b;
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
-    background-color: #63707e;
+    background-color: #17223b;
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
@@ -35,18 +35,18 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
 
 .nav li.thirdlevel > a {
     background-color: #FAFAFA !important;
-    color: #63707e;
+    color: #17223b;
     font-weight: bold;
 }
 
 a[data-toggle="tooltip"] {
-    color: #649345;
+    color: #263859;
     font-style: italic;
     cursor: default;
 }
 
 .navbar-inverse {
-    background-color: #63707e;
+    background-color: #17223b;
     border-color: #5b893c;
 }
 
@@ -61,7 +61,7 @@ a[data-toggle="tooltip"] {
 
 /* not sure if using this ...*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #63707e !important;
+    border-color: #17223b !important;
 }
 
 .btn-primary {
@@ -75,7 +75,7 @@ a[data-toggle="tooltip"] {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-color: #63707e;
+    background-color: #17223b;
     border-color: #5b893c;
 }
 
