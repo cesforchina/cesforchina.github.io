@@ -6,11 +6,9 @@ tags:
 - INAV
 keywords: pages, authoring, exclusion, frontmatter
 permalink: WIN10下用WSL编译INAV.html
-summary: "This is some summary frontmatter for my sample post."
+summary: "用于Windows 10的Linux子系统可能是在Windows 10下构建INAV的最简单方法。"
 ---
-# 在Windows 10中使用Linux子系统构建
 
-用于Windows 10的Linux子系统可能是在Windows 10下构建INAV的最简单方法。
 
 1. 使用来自Internet的任何指南启用WSL（Windows Subsystem for Linux）
 1. 从Windows应用商店安装 `Ubuntu`
