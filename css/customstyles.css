@@ -232,6 +232,7 @@ ul#results-container a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-top:8.6px;
+    margin-bottom:8.6px;
 }
 /* end search */
 
