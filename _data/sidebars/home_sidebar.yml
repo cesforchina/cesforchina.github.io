@@ -3,6 +3,7 @@
 entries:
 - title: Sidebar
   product: 项目笔记
+  version: 6.0
   levels: one
   folders:
 
