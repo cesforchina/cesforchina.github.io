@@ -26,7 +26,6 @@ entries:
     - title: Get started
       url: /mydoc_get_started.html
       output: web, pdf
-      type: homepage
 
     - title: Introduction
       url: /mydoc_introduction.html
