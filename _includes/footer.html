@@ -6,13 +6,13 @@
                     <img src="{{ "images/company_logo.png"}}" alt="Company logo"/>
                   </div>
                 </div>
-                <div style="display:table; height: 98px; float:right;padding:32px 0px">
+                <div style="display:table; height: 98px; float:right;">
                   <p style="display:table-cell;vertical-align:middle;">
                   &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.
                   <br />
-                  {% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
-                  <br />
                   {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}
+                  <br />
+                  {% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
                   </p>
                 </div>
               </div>
