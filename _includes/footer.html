@@ -10,9 +10,11 @@
                   <p style="display:table-cell;vertical-align:middle;">
                   &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.
                   <br />
-                  {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}
+                  Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
                   <br />
-                  {% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
+                  {% if page.last_updated %}
+                  <span>Page last updated:</span> {{page.last_updated}}
+                  {% endif %}
                   </p>
                 </div>
               </div>
