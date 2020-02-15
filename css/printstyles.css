@@ -5,10 +5,10 @@ body {
     font-size:14px;
 }
 .nav ul li a {border-top:0px; background-color:transparent; color: #808080; }
-#navig a[href] {color: #6b778d !important;}
+#navig a[href] {color: #ff6768 !important;}
 table .table {max-width:650px;}
 
-#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #595959 !important; }
+#navig li.sectionHead {font-weight: bold; font-size: 18px; color: #ff6768 !important; }
 #navig li {font-weight: normal; }
 
 #navig a[href]::after { content: leader(".") target-counter(attr(href), page); }
