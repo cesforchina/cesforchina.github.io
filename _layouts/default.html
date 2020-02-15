@@ -62,7 +62,7 @@
     <script>
       $(document).ready(function(){
           $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('cell-border order-column compact hover');
-          $("table.cell-border").Css("width:100%");
+          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').Css('width:100%');
           $('table.cell-border').DataTable( {
               paging: true,
               stateSave: true,
