@@ -122,7 +122,7 @@ table {
 caption {
     padding-top: 8px;
     padding-bottom: 8px;
-    color: #6b778d;
+    color: #777;
     text-align: left;
 }
 th {
@@ -149,7 +149,7 @@ table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd;
     text-transform: none;
-    background-color: #777;
+    background-color: #6b778d;
     color: white;
     text-align: left;
 }
