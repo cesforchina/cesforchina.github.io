@@ -3,7 +3,7 @@
 entries:
 - title: Sidebar
   product: 项目笔记
-  version: 
+  version:
   levels: one
   folders:
 
@@ -15,4 +15,7 @@ entries:
       output: web
     - title: Jekyll Doc
       url: /mydoc_introduction.html
+      output: web
+    - title: 材料力学
+      url: /课程资料_材料力学.html
       output: web
