@@ -17,26 +17,26 @@ entries:
       url: /课程资料_电工电子技术.html
       output: web
 
-   - title: 笔记
-     output: web
-     folderitems:
+  - title: 笔记
+    output: web
+    folderitems:
 
-     - title: 材料力学
-       url: /mydoc_tag_archives_overview.html
-       output: web
-     - title: 电工电子技术
-       url: /mydoc_tag_archives_overview.html
-       output: web
+    - title: 材料力学
+      url: /mydoc_tag_archives_overview.html
+      output: web
+    - title: 电工电子技术
+      url: /mydoc_tag_archives_overview.html
+      output: web
 
-       subfolders:
-       - title: 任务安排及学习重点
-         output: web
-         subfolderitems:
+      subfolders:
+      - title: 任务安排及学习重点
+        output: web
+        subfolderitems:
 
-         - title: 材料力学
-           url: /tag_formatting.html
-           output: web
+        - title: 材料力学
+          url: /tag_formatting.html
+          output: web
 
-         - title: 电工电子技术
-           url: /tag_navigation.html
-           output: web
+        - title: 电工电子技术
+          url: /tag_navigation.html
+          output: web
