@@ -1,14 +1,10 @@
 ---
-title: "WIN10下用WSL编译INAV"
-tags:
-- WSL
-- 飞控
-- INAV
-keywords: pages, authoring, exclusion, frontmatter
+title: WIN10下用WSL编译INAV
+tags: [WSL, 飞控, INAV]
+keywords: 'pages, authoring, exclusion, frontmatter'
 permalink: WIN10下用WSL编译INAV.html
-summary: "用于Windows 10的Linux子系统可能是在Windows 10下构建INAV的最简单方法。"
+summary: 用于Windows 10的Linux子系统可能是在Windows 10下构建INAV的最简单方法。
 ---
-
 
 1. 使用来自Internet的任何指南启用WSL（Windows Subsystem for Linux）
 1. 从Windows应用商店安装 `Ubuntu`
