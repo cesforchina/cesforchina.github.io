@@ -3,11 +3,7 @@ title: "无人机CAN总线电源方案"
 tags: [CAN,电源,ArduPilot]
 keywords: pages, authoring, exclusion, frontmatter
 permalink: 无人机CAN总线电源方案.html
-<<<<<<< HEAD
-summary:
-=======
 summary: "This is some summary frontmatter for my sample post."
->>>>>>> parent of d541153... Edited Note
 ---
 
 工作正在进行中！
