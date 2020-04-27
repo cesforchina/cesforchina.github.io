@@ -1,5 +1,4 @@
 ---
-title: WIN10下用WSL编译INAV
 tags: [WSL, 飞控, INAV]
 keywords: 'pages, authoring, exclusion, frontmatter'
 permalink: WIN10下用WSL编译INAV.html
