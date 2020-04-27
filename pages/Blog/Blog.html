@@ -23,7 +23,7 @@ folder: Blog
             {% if post.summary %}
              {{ post.summary | strip_html | strip_newlines | truncate: 160 }}
             {% else %}
-             {{ post.content | strip_newlines | truncate: 120 | strip_html }}
+             {{ post.content | strip_html | strip_newlines | remove: " " | truncate: 120 }}
             {% endif %}
         </p>
 
