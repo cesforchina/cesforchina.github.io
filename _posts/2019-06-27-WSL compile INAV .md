@@ -1,15 +1,10 @@
 ---
-<<<<<<< HEAD
-tags: [WSL, 飞控, INAV]
-keywords: 'pages, authoring, exclusion, frontmatter'
-=======
 title: "WIN10下用WSL编译INAV"
 tags:
 - WSL
 - 飞控
 - INAV
 keywords: pages, authoring, exclusion, frontmatter
->>>>>>> parent of dbfee16... Edited Note
 permalink: WIN10下用WSL编译INAV.html
 summary: "用于Windows 10的Linux子系统可能是在Windows 10下构建INAV的最简单方法。"
 ---
