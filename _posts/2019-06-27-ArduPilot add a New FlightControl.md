@@ -4,7 +4,7 @@ tags:
 - ArduPilot
 keywords: pages, authoring, exclusion, frontmatter
 permalink: 如何给ArduPilot添加一个新的飞控.html
-summary: "This is some summary frontmatter for my sample post."
+summary: 
 ---
 
 ArduPilot 支持各种各样的飞行控制器，新的控制器一直在增加。本页阐述了将ArduPilot移植到新电路板的步骤，重点是使用ChibiOS移植到基于STM32的电路板（最常见的类型）。 [ChibiOS ](http://www.chibios.org/dokuwiki/doku.php)
