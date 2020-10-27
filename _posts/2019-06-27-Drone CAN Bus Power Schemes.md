@@ -3,7 +3,7 @@ title: "无人机CAN总线电源方案"
 tags: [CAN,电源,ArduPilot]
 keywords: pages, authoring, exclusion, frontmatter
 permalink: 无人机CAN总线电源方案.html
-summary: 
+summary:
 ---
 
 工作正在进行中！
@@ -112,7 +112,4 @@ USB可用与非USB可用：对于维护或在地面上，仅通过插入USB电�
 因此，对于给定的飞行控制器，下一个最佳方法是直接从5.3 V电源砖本身为所有CAN节点供电。这种方法确保所有CAN节点都获得足够的功率和电压，因此是最可靠的。通过不将CAN-5V线连接到飞行控制器，而不是连接到电源砖，可以很容易地实现。该方案的缺点在于，当仅从USB供电时，没有节点可用，即，还必须附接电池以用于例如维护工作。然而，鉴于其简单性和简单实现，它可能是实现稳健电源方案的最佳选择。
 
 一个明显的扩展是拆分CAN-5V电源线，这样一些CAN节点由飞行控制器的CAN-5V线路供电，而另一些CAN节点则由5.3 V电源砖供电。通过将飞行控制器的CAN-5V线路和5.3 V电源布线连接到那些更喜欢双电源方案的节点，显然可以进一步扩展该方案。所有这些都可以以DIY方式容易地实现，但不方便，因为目前使用的连接器和目前可用的CAN总线扩展不支持这样的方案。
-<<<<<<< HEAD
-=======
 ![Screenshot](http://www.olliw.eu/uploads/uc4h-powerschemes-sketch-uc4h-cubecarrier-01.jpg)
->>>>>>> parent of d541153... Edited Note
